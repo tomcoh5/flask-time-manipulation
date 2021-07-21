@@ -1,0 +1,22 @@
+version: "3"
+services:
+  flask:
+    container_name: main
+    image: flask-web
+    restart: always
+    ports:
+     - "5000:5000"
+    volumes: 
+      - DataVolume:/mydata
+
+  flask-slave:
+    container_name: slave
+    image: flask-slave
+    ports:
+     - "5001:5001"
+     - "22:22"
+    volumes:
+      - DataVolume:/mydata
+
+volumes:
+  DataVolume:
