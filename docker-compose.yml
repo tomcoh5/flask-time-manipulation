@@ -14,7 +14,6 @@ services:
     image: "${dockerImageSlave}"
     ports:
      - "5001:5001"
-     - "22:22"
     volumes:
       - DataVolume:/mydata
 
