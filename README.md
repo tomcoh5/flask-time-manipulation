@@ -4,6 +4,6 @@ There are two Docker containers (python based image) that are connected with vol
 ## CI CD TOOL
 The CICD I chose was Jenkins , mostly because of two reasons.
 The first reason is that I an have exeprience with this CICD tool.
-The second reason is that has huge community (lot of documentation and support online)
+The second reason is that it has huge community (lot of documentation and support online)
 # CICD steps
 Git clone -> building Dockerimages -> testing (curl command) -> uploading to ECR (AWS) -> deploying using ECS-cli (AWS)
