@@ -8,12 +8,6 @@ services:
      - "5000:5000"
     volumes: 
       - DataVolume:/mydata
-    logging: 
-      driver: awslogs
-      options:
-        awslogs-group: flask-up
-        awslogs-region: eu-west-2
-        awslogs-stream-prefix: web
 
   flask-slave:
     container_name: slave
@@ -22,12 +16,6 @@ services:
      - "5001:5001"
     volumes:
       - DataVolume:/mydata
-    logging: 
-      driver: awslogs
-      options:
-        awslogs-group: flask-up
-        awslogs-region: eu-west-2
-        awslogs-stream-prefix: web
 
 volumes:
   DataVolume:
