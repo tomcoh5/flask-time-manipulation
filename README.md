@@ -1,5 +1,5 @@
 # flask-time-manipulation
-## Applcation setup
+## Application setup
 There are two Docker containers (python based image) that are connected with volume. When you click in the main website (the first container) it will write to a file (named "time.txt") simple string + newline . The second container will read the file , count the number of lines and calculate num_of_lines multiply by 5. It will then take the exact time that you login to the website (datetime.datetime.now) and will subtract the number_oflines multiply by 5, that will be the output in the website.
 ## CI CD TOOL
 The CICD I chose was Jenkins , mostly because of two reasons.
